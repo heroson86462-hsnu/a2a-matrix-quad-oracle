@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+dist/
+build/
+*.egg-info/
+.venv/
+.env
+*.db
+*.db-*
+cloudflare-worker/node_modules/
+cloudflare-worker/.wrangler/
+.DS_Store

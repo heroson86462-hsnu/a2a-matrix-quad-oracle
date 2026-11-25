@@ -1,0 +1,17 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.heroson86462-hsnu/a2a-matrix-quad-oracle",
+  "description": "4-in-1 deterministic MCP: Schedule-A/EmpCo, GSA SaaS floors, FMC 541 & NDAA 5949.",
+  "status": "active",
+  "repository": {
+    "url": "https://github.com/heroson86462-hsnu/a2a-matrix-quad-oracle",
+    "source": "github"
+  },
+  "version": "2.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://a2a-matrix-quad-edge.a2a-data-matrix.workers.dev/mcp"
+    }
+  ]
+}

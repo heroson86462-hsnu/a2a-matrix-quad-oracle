@@ -1,0 +1,21 @@
+name: a2a-matrix-quad-oracle
+description: >
+  Unified Streamable-HTTP & offline stdio MCP server for A2A Data Matrix (#06 ListingShield
+  Schedule-A/EmpCo, #09 SaaSBench GSA/DIR floor benchmarks, #08 DemurrageAudit FMC 46 CFR 541
+  stop-clock, #07 SiliconOrigin IC PCN & NDAA Section 5949 wafer fab provenance).
+homepage: https://a2a-matrix-quad-edge.a2a-data-matrix.workers.dev
+remote:
+  type: streamable-http
+  url: https://a2a-matrix-quad-edge.a2a-data-matrix.workers.dev/mcp
+categories:
+  - compliance
+  - procurement
+  - supply-chain
+  - e-commerce
+tags:
+  - x402
+  - schedule-a-tro
+  - empco
+  - ndaa-5949
+  - fmc-541
+  - saas-pricing

@@ -1,0 +1,55 @@
+[build-system]
+requires = ["hatchling>=1.24.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "a2a-matrix-quad-oracle"
+version = "2.0.0"
+description = "A2A Data Matrix Quad-Oracle — Deterministic MCP & x402 Oracles for Schedule-A/EmpCo, GSA SaaS Floors, FMC 541 Demurrage & NDAA 5949 IC Provenance"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+  { name = "Edmund Hu", email = "edmundhu@helloyunivia.com" }
+]
+keywords = [
+  "mcp",
+  "model-context-protocol",
+  "ai-agents",
+  "x402",
+  "compliance",
+  "empco",
+  "fmc-541",
+  "ndaa-5949",
+  "saas-pricing"
+]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Software Development :: Libraries :: Python Modules"
+]
+dependencies = [
+  "httpx>=0.27.0"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.2.0"
+]
+
+[project.urls]
+Homepage = "https://github.com/heroson86462-hsnu/a2a-matrix-quad-oracle"
+Repository = "https://github.com/heroson86462-hsnu/a2a-matrix-quad-oracle"
+Issues = "https://github.com/heroson86462-hsnu/a2a-matrix-quad-oracle/issues"
+
+[project.scripts]
+a2a-matrix-quad-oracle = "a2a_matrix_quad.stdio_mcp:main"
+a2a-matrix-quad-mcp = "a2a_matrix_quad.stdio_mcp:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/a2a_matrix_quad"]

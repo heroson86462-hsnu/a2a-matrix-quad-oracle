@@ -1,0 +1,6 @@
+name = "a2a-matrix-quad-edge"
+main = "src/index.js"
+compatibility_date = "2026-07-01"
+
+[vars]
+ORIGIN_BASE_URL = "https://a2a-matrix-quad-oracle.fly.dev"

@@ -1,0 +1,33 @@
+app = "a2a-matrix-quad-oracle"
+primary_region = "nrt"
+
+[env]
+  PORT = "8080"
+  MATRIX_DATA_DIR = "/data"
+  X402_FACILITATOR_URL = "https://facilitator.payai.network"
+  A2A_TREASURY_WALLET = "0x5ab8fBd41e0691876fE3cC3b0dF62A901C2cD044"
+  MATRIX_AUTO_HARVEST_INTERVAL_SEC = "7200"
+
+[mounts]
+  source = "matrix_data"
+  destination = "/data"
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = "off"
+  auto_start_machines = true
+  min_machines_running = 1
+  processes = ["app"]
+
+  [[http_service.checks]]
+    grace_period = "15s"
+    interval = "30s"
+    method = "GET"
+    timeout = "5s"
+    path = "/healthz"
+
+[[vm]]
+  memory = "512mb"
+  cpu_kind = "shared"
+  cpus = 1
