@@ -7,7 +7,36 @@
     "url": "https://github.com/heroson86462-hsnu/a2a-matrix-quad-oracle",
     "source": "github"
   },
-  "version": "2.0.0",
+  "version": "2.0.1",
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "a2a-matrix-quad-oracle",
+      "version": "2.0.1",
+      "runtimeHint": "uvx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "A2A_MATRIX_URL",
+          "description": "Optional remote A2A Data Matrix Quad-Oracle Cloud Gateway URL",
+          "isRequired": false,
+          "default": "https://a2a-matrix-quad-edge.a2a-data-matrix.workers.dev"
+        },
+        {
+          "name": "A2A_PREPAID_BEARER",
+          "description": "Optional prepaid enterprise bearer token for cloud oracles",
+          "isRequired": false
+        },
+        {
+          "name": "A2A_X402_PAYMENT",
+          "description": "Optional Base USDC x402 payment header payload",
+          "isRequired": false
+        }
+      ]
+    }
+  ],
   "remotes": [
     {
       "type": "streamable-http",

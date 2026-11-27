@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "a2a-matrix-quad-oracle"
-version = "2.0.0"
+version = "2.0.1"
 description = "A2A Data Matrix Quad-Oracle — Deterministic MCP & x402 Oracles for Schedule-A/EmpCo, GSA SaaS Floors, FMC 541 Demurrage & NDAA 5949 IC Provenance"
 readme = "README.md"
 requires-python = ">=3.10"

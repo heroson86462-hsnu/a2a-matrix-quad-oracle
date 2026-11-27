@@ -209,7 +209,7 @@ def handle_jsonrpc_message(msg: Dict[str, Any]) -> Optional[Dict[str, Any]]:
             "id": req_id,
             "result": {
                 "protocolVersion": "2025-06-18",
-                "serverInfo": {"name": "a2a-matrix-quad-oracle", "version": "2.0.0"},
+                "serverInfo": {"name": "a2a-matrix-quad-oracle", "version": "2.0.1"},
                 "capabilities": {"tools": {}},
             },
         }

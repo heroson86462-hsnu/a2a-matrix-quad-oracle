@@ -6,6 +6,7 @@ mcp-name: io.github.heroson86462-hsnu/a2a-matrix-quad-oracle
 
 **4-in-1 Deterministic Commercial Compliance, Regulatory & Procurement Oracles for AI Agents** (zero runtime LLM cost, `<5ms` deterministic evaluation, Streamable-HTTP MCP + `stdio` `uvx` + Base USDC `x402`).
 
+[![PyPI](https://img.shields.io/pypi/v/a2a-matrix-quad-oracle)](https://pypi.org/project/a2a-matrix-quad-oracle/)
 [![MCP Registry](https://img.shields.io/badge/MCP_Registry-io.github.heroson86462--hsnu%2Fa2a--matrix--quad--oracle-00b4d8)](https://registry.modelcontextprotocol.io)
 [![x402 Ready](https://img.shields.io/badge/HTTP%20402-x402%20USDC-10b981)](https://a2a-matrix-quad-edge.a2a-data-matrix.workers.dev/.well-known/x402-manifest.json)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
@@ -47,11 +48,7 @@ Includes offline zero-cost `scan_listing_copy_locally` and `check_fmc541_demurra
   "mcpServers": {
     "a2a-matrix-quad-oracle": {
       "command": "uvx",
-      "args": [
-        "--from",
-        "git+https://github.com/heroson86462-hsnu/a2a-matrix-quad-oracle",
-        "a2a-matrix-quad-oracle"
-      ]
+      "args": ["a2a-matrix-quad-oracle"]
     }
   }
 }

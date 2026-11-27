@@ -44,7 +44,6 @@ jobs:
     needs: test-and-validate
     if: startsWith(github.ref, 'refs/tags/v')
     runs-on: ubuntu-latest
-    continue-on-error: true
     permissions:
       id-token: write
     steps:
